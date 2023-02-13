@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/book_search_view">
+
+    <fragment
+            android:id="@+id/book_search_view"
+            android:name="com.example.googlebook.ui.BookSearchFragment"
+            android:label="fragment_book_search"
+            tools:layout="@layout/fragment_book_search">
+        <action
+                android:id="@+id/action_open_book_detail"
+                app:destination="@id/book_detail_view"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+            android:id="@+id/book_detail_view"
+            android:name="com.example.googlebook.ui.BookDetailFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_book_detail">
+        <action
+                android:id="@+id/action_back_to_search"
+                app:destination="@id/book_search_view"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
