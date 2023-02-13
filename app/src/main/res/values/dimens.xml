@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_list_item_height">76dp</dimen>
+    <dimen name="list_view_padding">8dp</dimen>
+    <dimen name="searchview_height">48dp</dimen>
+</resources>
